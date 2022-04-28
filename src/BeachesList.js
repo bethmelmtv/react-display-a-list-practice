@@ -4,7 +4,7 @@ export default function BeachesList({ beaches }) {
   return (
     <div>
       {beaches.map((beach) => (
-        <BeachItem key={beach} {...beach} />
+        <BeachItem key={beach.name} {...beach} />
       ))}
     </div>
   );
